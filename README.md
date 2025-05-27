@@ -10,7 +10,6 @@ Welcome to my **Golang Learning** repository! This repo contains very **basic, b
 
 - Each folder corresponds to a fundamental Golang concept.
 - Every folder has a single `main.go` file with clean, minimal code.
-- Designed for **self-paced practice and concept clarity**.
 - Contributions are warmly welcome! See below. 👇
 
 ---
