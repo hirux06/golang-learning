@@ -18,9 +18,9 @@ Welcome to my **Golang Learning** repository! This repo contains very **basic, b
 
 Want to help improve this repo? Here's how you can contribute:
 
-- ✅ Add **output examples** for existing programs.
+- ✅ Add **output examples** for existing programs (maybe some corner cases and parameters too can be considered).
 - ✅ Add **brief comment explanations** inside `main.go` files.
-- ✅ Suggest improvements or new beginner topics.
+- ✅ **Suggest improvements** or new beginner topics.
 - ✅ Keep code beginner-friendly!
 
 **Note:** If you add new codes/topics make sure to include **brief comment explanations** inside `main.go` files for future references.
