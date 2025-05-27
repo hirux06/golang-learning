@@ -50,6 +50,8 @@ Want to help improve this repo? Here's how you can contribute:
 | 17   | Files              | [18-files](https://github.com/hirux06/golang-learning/tree/main/18-files) |
 | 18   | Web Requests       | [19-webrequests](https://github.com/hirux06/golang-learning/tree/main/19-webrequests) |
 | 19   | URLs               | [20-urls](https://github.com/hirux06/golang-learning/tree/main/20-urls) |
+| 21   | Web Request Verbs               | [21-webreqverbs](https://github.com/hirux06/golang-learning/tree/main/21-webreqverbs) |
+| 19   | MockUpServer               | [webserver](https://github.com/hirux06/golang-learning/tree/main/webserver) |
 
 ---
 
