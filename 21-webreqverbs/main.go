@@ -7,13 +7,21 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
+	"strings"
 )
 
 const getUrl = "http://localhost:8000/get"
+const postUrl = "http://localhost:8000/post"
+const formUrl = "http://localhost:8000/postform"
 
 func main() {
-	PerformGetReq(getUrl)
+	// PerformGetReq(getUrl)
+	// PerformPostReq(postUrl)
+	PerformPostFormReq(formUrl)
 }
+
+
 func PerformGetReq(getUrl string) {
 	response, err :=  http.Get(getUrl)
 
@@ -30,4 +38,46 @@ func PerformGetReq(getUrl string) {
 	content, _ := io.ReadAll(response.Body)
 
 	fmt.Println("Content: ", string(content))
+}
+
+func PerformPostReq(postUrl string) {
+
+	// Fake JSON Payload
+	requestBody := strings.NewReader(`
+		{
+			"coursename": "Learn Golang",
+			"price": "0",
+			"platform": "www.youtube.com"
+		}
+	`)
+
+	response, err := http.Post(postUrl, "application/json", requestBody)
+
+	if(err != nil){
+		panic(err)
+	}
+
+	defer response.Body.Close()
+
+	content, _ := io.ReadAll(response.Body)
+
+	fmt.Println(string(content))
+}
+
+func PerformPostFormReq(formUrl string) {
+	data := url.Values{}
+
+	data.Add("firstname", "saran")
+	data.Add("lastname", "hiruthik")
+	data.Add("email","saran@go.dev")
+
+	response, err := http.PostForm(formUrl, data)
+
+	if(err != nil){
+		panic(err)
+	}
+
+	content, _ := io.ReadAll(response.Body)
+
+	fmt.Println(string(content))
 }
