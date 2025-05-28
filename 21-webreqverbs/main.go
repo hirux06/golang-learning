@@ -1,5 +1,6 @@
 // The mockup nodejs server can be found at: https://github.com/hirux06/golang-learning/tree/main/webserver
 // That is where the requests are made
+// Make sure you are running that backend and then sending req from here
 
 package main
 
